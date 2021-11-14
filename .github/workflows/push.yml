@@ -1,0 +1,26 @@
+name: Push
+
+on:
+  workflow_dispatch:
+
+jobs:
+  push:
+    runs-on: windows-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '2.2.204'
+          
+      - name: Pack
+        run: |
+          powershell
+          choco pack jreleaser.nuspec
+          
+      - name: Publish
+        run: |
+          powershell
+          choco apikey -k ${{ secrets.CHOCOLATEY_API_KEY  }} -source https://push.chocolatey.org/
+          choco push $(ls *.nupkg | % {$_.FullName}) -s https://push.chocolatey.org/
