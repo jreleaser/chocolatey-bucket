@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- required -->
+    <id>jreleaser</id>
+    <version>0.9.0</version>
+    <authors>Andres Almiray</authors>
+    <description>JReleaser is a release automation tool. Its goal is to simplify creating releases
+and publishing artifacts to multiple package managers while providing customizable options.
+
+JReleaser takes inputs from popular builds tools (Ant, Maven, Gradle) such as JAR files, binary
+distributions (.zip, .tar), JLink images, or any other file that you’d like to publish as a Git
+release on popular Git services such as Github or Gitlab. Distribution files can additionally be
+published to be consumed by popular package managers as Homebrew, Snapcraft, or get ready to be
+launched via JBang. Releases may be announced in a variety of channels such as Twitter, Zulip, or SDKMAN!
+</description>
+    <!-- optional -->
+    <title>JReleaser</title>
+    <projectUrl>https://jreleaser.org</projectUrl>
+    <copyright>2020 Andres Almiray</copyright>
+    <licenseUrl>https://github.com/jreleaser/jreleaser/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>jreleaser release tool java git</tags>
+    <summary>Release projects quickly and easily with JReleaser</summary>
+    <projectSourceUrl>https://github.com/jreleaser/jreleaser</projectSourceUrl>
+    <packageSourceUrl>https://github.com/jreleaser/chocolatey-bucket</packageSourceUrl>
+    <docsUrl>https://jreleaser.org</docsUrl>
+    <bugTrackerUrl>https://github.com/jreleaser/jreleaser/issues</bugTrackerUrl>
+    <releaseNotes>https://github.com/jreleaser/jreleaser/releases/tag/v0.9.0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
