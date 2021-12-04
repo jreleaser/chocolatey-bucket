@@ -4,16 +4,17 @@
   <metadata>
     <!-- required -->
     <id>jreleaser</id>
-    <version>0.9.0</version>
+    <version>0.9.1</version>
     <authors>Andres Almiray</authors>
-    <description>JReleaser is a release automation tool. Its goal is to simplify creating releases
-and publishing artifacts to multiple package managers while providing customizable options.
+    <description>JReleaser is a release automation tool. Its goal is to simplify creating releases and
+publishing artifacts to multiple package managers while providing customizable options.
 
-JReleaser takes inputs from popular builds tools (Ant, Maven, Gradle) such as JAR files, binary
-distributions (.zip, .tar), JLink images, or any other file that you’d like to publish as a Git
-release on popular Git services such as Github or Gitlab. Distribution files can additionally be
-published to be consumed by popular package managers as Homebrew, Snapcraft, or get ready to be
-launched via JBang. Releases may be announced in a variety of channels such as Twitter, Zulip, or SDKMAN!
+JReleaser takes inputs from popular builds tools (Ant, Maven, Gradle) such as JAR files,
+binary distributions (.zip, .tar), JLink images, or any other file that you’d like to
+publish as a Git release on popular Git services such as GitHub, GitLab, or Gitea.
+Distribution files may additionally be published to be consumed by popular package managers
+such as Homebrew, Chocolatey, Snapcraft, or get ready to be launched via JBang. Releases
+may be announced in a variety of channels such as Twitter, Zulip, SDKMAN!, and more.
 </description>
     <!-- optional -->
     <title>JReleaser</title>
@@ -27,7 +28,7 @@ launched via JBang. Releases may be announced in a variety of channels such as T
     <packageSourceUrl>https://github.com/jreleaser/chocolatey-bucket</packageSourceUrl>
     <docsUrl>https://jreleaser.org</docsUrl>
     <bugTrackerUrl>https://github.com/jreleaser/jreleaser/issues</bugTrackerUrl>
-    <releaseNotes>https://github.com/jreleaser/jreleaser/releases/tag/v0.9.0</releaseNotes>
+    <releaseNotes>https://github.com/jreleaser/jreleaser/releases/tag/v0.9.1</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
