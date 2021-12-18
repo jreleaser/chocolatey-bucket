@@ -17,10 +17,11 @@ jobs:
       - name: Pack
         run: |
           powershell
-          choco pack jreleaser.nuspec
+          choco pack jreleaser/jreleaser.nuspec
           
       - name: Publish
         run: |
           powershell
+          sl jreleaser
           choco apikey -k ${{ secrets.CHOCOLATEY_API_KEY  }} -source https://push.chocolatey.org/
           choco push $(ls *.nupkg | % {$_.FullName}) -s https://push.chocolatey.org/
