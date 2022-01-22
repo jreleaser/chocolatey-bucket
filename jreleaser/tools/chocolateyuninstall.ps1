@@ -1,7 +1,7 @@
-# Generated with JReleaser 0.10.0-SNAPSHOT at 2021-12-28T14:52:05.57129Z
+# Generated with JReleaser 1.0.0-SNAPSHOT at 2022-01-22T09:46:39.196814Z
 $tools = Split-Path $MyInvocation.MyCommand.Definition
 $package = Split-Path $tools
-$app_home = Join-Path $package 'jreleaser-0.10.0'
+$app_home = Join-Path $package 'jreleaser-1.0.0-M1'
 $app_bat = Join-Path $app_home 'bin/jreleaser.bat'
 
 Uninstall-BinFile -Name 'jreleaser' -Path $app_bat
