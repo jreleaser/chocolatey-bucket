@@ -22,7 +22,7 @@ jobs:
       - name: Pack
         shell: powershell
         run: |
-          choco pack jreleaser/${{ env.PACKAGE_NAME }}
+          choco pack ${{ env.PACKAGE_NAME }}
 
       - name: Publish
         shell: powershell
