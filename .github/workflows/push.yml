@@ -23,7 +23,7 @@ jobs:
       - name: Pack
         shell: powershell
         run: |
-          choco pack jreleaser/${{ env.PACKAGE_NAME }}.nuspec
+          choco pack jreleaser/${{ env.PACKAGE_NAME }}
 
       - name: Publish
         shell: powershell
