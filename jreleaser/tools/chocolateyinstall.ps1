@@ -1,13 +1,13 @@
-# Generated with JReleaser 1.16.0-SNAPSHOT at 2024-12-31T11:03:40.173959401Z
+# Generated with JReleaser 1.17.0-SNAPSHOT at 2025-02-28T08:12:05.668760258Z
 $tools = Split-Path $MyInvocation.MyCommand.Definition
 $package = Split-Path $tools
-$app_home = Join-Path $package 'jreleaser-1.16.0'
+$app_home = Join-Path $package 'jreleaser-1.17.0'
 $app_exe = Join-Path $app_home 'bin/jreleaser.bat'
 
 Install-ChocolateyZipPackage `
     -PackageName 'jreleaser' `
-    -Url 'https://github.com/jreleaser/jreleaser/releases/download/v1.16.0/jreleaser-1.16.0.zip' `
-    -Checksum '7216a8b70616cf0554326db9bf704832f4fe67d4e370b2111629e50a6f9a04da' `
+    -Url 'https://github.com/jreleaser/jreleaser/releases/download/v1.17.0/jreleaser-1.17.0.zip' `
+    -Checksum '0992446f16133581e441fce3ed9c576a6966483e49ecfd3641386f940541b61d' `
     -ChecksumType 'sha256' `
     -UnzipLocation $package
 
